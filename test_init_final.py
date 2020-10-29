@@ -2595,7 +2595,7 @@ class mainCog(commands.Cog):
 					for i in range(len(racing_member)):
 						output +=  str_racing_field[i] + '\n'
 					
-					await result_race.edit(content = output + ':checkered_flag:  경주 시작!')
+					await result_race.edit(content = output + ':checkered_flag:  경주 시작! 알스 이겨라! ')
 				
 				for i in range(len(racing_field)):
 					fr.append(race_info[i][0])
