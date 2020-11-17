@@ -2653,8 +2653,8 @@ class mainCog(commands.Cog):
 			if len(racing_member) <= 1:
 				await ctx.send('레이스 인원이 2명보다 작습니다.')
 				return
-			elif len(racing_member) >= 13:
-				await ctx.send('레이스 인원이 12명 초과입니다.')
+			elif len(racing_member) >= 21:
+				await ctx.send('레이스 인원이 20명 초과입니다.')
 				return
 			else :
 				race_val = random.sample(range(tmp_race_tab, tmp_race_tab+len(racing_member)), len(racing_member))
@@ -2689,7 +2689,7 @@ class mainCog(commands.Cog):
 				await asyncio.sleep(1)
 				await result_race.edit(content = output + ':traffic_light: 1초 후 경주가 시작됩니다!')
 				await asyncio.sleep(1)
-				await result_race.edit(content = output + ':checkered_flag:  경주 시작!')								
+				await result_race.edit(content = output + ':checkered_flag:  경주 시작! 알스이겨라!')								
 
 				for i in range(len(racing_member)):
 					test = random.sample(range(2,field_size-2), race_info[i][2])
